@@ -24,3 +24,11 @@ Training with BackboneJS
  * ``` get() ```  - gets/finds a specific model property
  * ```set() ``` - changes or adds new properties to models
  * ```on() ```- triggers the changes
+
+* Backbone Views
+ * Used to create templates with underscore.js
+ * Rules are created to move and display data in HTML
+ * ```render() ```- builds the structure and sends model data to webpage
+ * ```<section> ```-> collection data
+ * ```<article> ``` -> model data
+
