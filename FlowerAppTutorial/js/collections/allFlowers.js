@@ -1,11 +1,12 @@
+//instantiate a collection
+//add model instances
+
 var app = app || {};
 
 app.FlowersCollection = Backbone.Collection.extend({
 	model: app.singleFlower
-
 });
 
-app.EuropeanCollection = 
-
-//instantiate a collection
-//add model instances
+app.EuropeanCollection = Backbone.Collection.extend({
+	model: app.singleFlower
+});

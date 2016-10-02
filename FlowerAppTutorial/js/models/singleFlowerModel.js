@@ -13,12 +13,13 @@ app.singleFlower = Backbone.Model.extend({
 		console.log(this.get("name") + this.get("price"));
 
 		this.on('change', function(){
-			console.log("This model: " this.get("name)" + " changed"));
+			console.log("This model: " + this.get("name") + " changed");
 		});
 		
 		this.on('change:price', function(){
-			console.log("The price for: " this.get("name)" + " changed"));
+			console.log("The price for: " + this.get("name)" + " changed"));
 		});
+		
 	}
 	
 });
