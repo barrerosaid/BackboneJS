@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<meta charset="UTF-8">
+	<title> Blogging with BackboneJS </title>
+</head>
+<body>
+	<div class ="container">
+		<h1> Blogging App </h1>
+		
+		<table class ="table">
+			<thead>
+				<tr>
+					<th> Author </th>
+					<th> Title </th>
+					<th> URL </th>
+					<th> Action </th>
+				<tr>
+					<td><input class="form-control author-input"></td>
+					<td><input class="form-control title-input"></td>
+					<td><input class="form-control url-input"></td>
+					<td><button class="btn btn-primary add-blog"> Add </button> </td>
+				
+				<tr>
+				
+				<tbody class="blogs-list"></tbody>
+				
+			<thead>
+	</div>
+	
+	<script type="text/template" class="blogs-list-template"> 
+		<td> <span class="author"> <%= author %> </span> </td>
+		<td> <span class="title"> <%= title %> </span> </td>
+		<td> <span class="url"> <%= url %> </span> </td>
+		<td> <button class="btn btn-warning edit-blog"> Edit </button> </td>
+		<td> <button class="btn btn-danger delete-blog"> Delete </button> </td>
+	</script>
+	
+	<!-- Interacts with elements on webpage -->
+    <script src="libs/jquery.js"></script>
+	<!-- Provides additional functionality for interacting with data -->
+    <script src="libs/underscore.js"></script>
+	<!-- always list backbone.js last -->
+    <script src="libs/backbone.js"></script>
+	<script src="js/mainBlogApp.js"></script>
+</body>
+</html>	
+	
